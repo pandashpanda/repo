@@ -87,8 +87,8 @@ def main():
         '--logdir',
         dest='log_dir',
         metavar='<dir>',
-        help='Log directory')"""
-    args = parser.parse_args(sys.argv[1:])
+        help='Log directory')
+    args = parser.parse_args(sys.argv[1:])"""
 
     post_process_tree(args.source_root, args.log_dir)
 # +------------------------------------------------------
