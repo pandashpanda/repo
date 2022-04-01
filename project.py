@@ -79,7 +79,7 @@ def main():
     """Identify images with text to assess localization impact"""
     parser = argparse.ArgumentParser(
         description='Identify images with text to assess localization impact')
-    """parser.add_argument(
+    parser.add_argument(
         'source_root',
         metavar='<source_root>',
         help='Source path containing images')
@@ -88,7 +88,7 @@ def main():
         dest='log_dir',
         metavar='<dir>',
         help='Log directory')
-    args = parser.parse_args(sys.argv[1:])"""
+    args = parser.parse_args(sys.argv[1:])
 
     post_process_tree(args.source_root, args.log_dir)
 # +------------------------------------------------------
